@@ -1,0 +1,12 @@
+.navbar-nav .nav-item .nav-link img{
+    width: 25%;
+}
+
+.nav-sidebar .nav-link img{
+    width: 9%;
+    margin-right: 5px;
+}
+
+.info h6{
+    color: white;
+}

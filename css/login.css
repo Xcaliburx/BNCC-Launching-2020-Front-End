@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../asset/font/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../asset/font/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../asset/font/Montserrat/Montserrat-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat-Regular';
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.login {
+    background-color: #080808;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    padding: 6rem 3rem;
+}
+
+.logo {
+    width: 13rem;
+    height: 3rem;
+}
+
+.box {
+    width: 45%;
+    background-color: #202020;
+    border-radius: 20px;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 2;
+}
+
+.box-content {
+    padding: 2rem 4rem;
+}
+
+.box h3 {
+    color: #0F80FF;
+    text-align: center;
+    font-family: 'Montserrat-SemiBold';
+}
+
+.login-form label {
+    color: #dddddd;
+    font-size: .8rem;
+}
+
+.form-group input {
+    border-radius: 20px;
+    background-color: transparent;
+    color: #dddddd;
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: #383737;
+    color: #dddddd;
+}
+
+.login-form .btn {
+    background-color: #0F80FF;
+    color: #dddddd;
+    font-family: 'Montserrat-SemiBold';
+    text-transform: uppercase;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 33px;
+}
+
+.register-link {
+    margin-top: 3rem;
+    color: #dddddd;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.ring1 {
+    position: absolute;
+    max-width: 50%;
+    top: -50%;
+    right: -15%;
+    z-index: 1;
+}
+
+.ring2 {
+    position: absolute;
+    max-width: 50%;
+    top: 55%;
+    left: -22%;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .box {
+        width: 60%;
+    }
+
+    .ring1,
+    .ring2 {
+        max-width: 40%;
+    }
+
+    .ring1 {
+        top: -20%;
+        right: -15%;
+    }
+
+    .ring2 {
+        top: 60%;
+        right: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+
+    .box-content {
+        padding: 2rem 2rem;
+    }
+
+    .wrapper {
+        padding-top: 50%;
+        padding-bottom: 30%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .ring1,
+    .ring2 {
+        max-width: 60%;
+    }
+
+    .ring1 {
+        top: -9%;
+        right: 20%;
+    }
+
+    .ring2 {
+        top: 85%;
+        left: 20%
+    }
+}

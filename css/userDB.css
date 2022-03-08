@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../asset/font/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../asset/font/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../asset/font/Montserrat/Montserrat-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.user-dashboard {
+    background-color: #080808;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Montserrat-Regular';
+    position: relative;
+    overflow: hidden;
+}
+
+.ring1,
+.ring2 {
+    position: absolute;
+    max-width: 50%;
+}
+
+.ring1 {
+    right: -15rem;
+    top: -16rem;
+    z-index: 1;
+}
+
+.ring2 {
+    left: -15rem;
+    bottom: -15rem;
+    z-index: 1;
+}
+
+.userDB-wrapper {
+    padding-top: 8rem;
+}
+
+.userDB-wrapper .greetings {
+    font-family: 'Montserrat-Bold';
+    font-size: 3.5rem;
+    color: #0063AF;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.userDB-wrapper .content-paragraph {
+    color: #dddddd;
+    line-height: 2rem;
+    font-size: 1em;
+    text-align: center;
+    margin: auto 7rem;
+}
+
+.meeting-box {
+    position: relative;
+    background-color: #202020;
+    box-shadow: 0px 0px 30px #00000029;
+    width: 80%;
+    height: fit-content;
+    border-radius: 33px;
+    margin: 5rem auto 2rem auto;
+    padding: 0 4rem;
+    z-index: 50;
+}
+
+.meeting-box-content {
+    padding-top: 4rem;
+}
+
+.meeting-box-title {
+    font-family: 'Montserrat-Bold';
+    font-size: 1.675em;
+    color: #0063AF;
+    text-align: center;
+}
+
+.meeting-box-link,
+.meeting-box-schedule {
+    margin: 0 auto;
+}
+
+.meeting-box-description,
+.meeting-briefing-schedule {
+    color: #dddddd;
+    font-size: 1em;
+}
+
+
+.blue {
+    font-family: 'Montserrat-SemiBold';
+    color: #0063AF;
+}
+
+.meeting-link {
+    background-color: #dddddd;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.meeting-link p a {
+    text-decoration: none;
+    color: black;
+}
+
+.schedule select {
+    border-radius: 20px;
+    background-color: transparent;
+    color: #dddddd;
+}
+
+.submit {
+    max-width: 100%;
+    width: 37%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto 1rem auto;
+    border-radius: 33px;
+    background-color: #0F80FF;
+    border: none;
+}
+
+.submit .btn-text {
+    font-family: 'Montserrat-SemiBold';
+    color: #dddddd;
+    text-transform: uppercase;
+    padding: .2rem 0;
+}
+
+.logout .logout-icon {
+    width: 13%;
+    margin-right: 4px;
+}
+
+.logout {
+    background-color: transparent;
+    color: #dddddd;
+    border: 5px solid #dddddd;
+    border-radius: 33px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 5rem auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .meeting-box {
+        margin-top: 3rem;
+    }
+
+    .userDB-wrapper .content-paragraph {
+        margin: 0 6rem;
+    }
+
+    .submit {
+        width: 50%;
+    }
+
+    .logout {
+        width: 32%;
+    }
+
+    .ring1 {
+        top: -8rem;
+        right: -13rem;
+    }
+
+    .ring2 {
+        left: -12rem;
+        bottom: -4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .userDB-wrapper .content-paragraph {
+        margin: 0 4rem;
+    }
+
+    .submit {
+        width: 50%;
+    }
+
+    .logout {
+        width: 40%;
+    }
+
+    .ring1 {
+        top: -5rem;
+        right: -6rem;
+    }
+
+    .ring2 {
+        bottom: -3rem;
+        left: -9rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .userDB-wrapper {
+        padding-top: 3rem;
+    }
+
+    .userDB-wrapper .greetings {
+        font-size: 2.5rem;
+    }
+
+    .userDB-wrapper .content-paragraph {
+        margin: 0 2.5rem;
+        text-align: left;
+    }
+
+    .meeting-box {
+        padding: 0 2rem;
+        border-radius: 20px;
+    }
+
+    .meeting-box-content {
+        padding-top: 2rem;
+    }
+
+    .submit {
+        width: 75%;
+    }
+
+    .logout .logout-icon {
+        width: 25%;
+        margin-right: 10px;
+    }
+
+    .ring1,
+    .ring2 {
+        max-width: 80%;
+    }
+
+    .ring1 {
+        top: -4rem;
+        right: -10rem;
+    }
+
+    .ring2 {
+        bottom: 2rem;
+        left: -7rem;
+    }
+}

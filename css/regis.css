@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../asset/font/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../asset/font/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../asset/font/Montserrat/Montserrat-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat-Regular";
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.register {
+  background-color: #080808;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 3rem;
+}
+
+.logo {
+  width: 13rem;
+  height: 3rem;
+}
+
+.box {
+  width: 80%;
+  background-color: #202020;
+  border-radius: 20px;
+  margin: 2rem auto;
+  position: relative;
+  z-index: 2;
+
+}
+
+.box-title {
+  color: #0f80ff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold";
+}
+
+.box-content {
+  padding: 4rem;
+}
+
+.vertical {
+  border-left: 1px solid #707070;
+  height: 58rem;
+  position: absolute;
+  left: 50%;
+  width: 1%;
+}
+
+.regis-form label {
+  color: #dddddd;
+  font-size: 0.8rem;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.form-group input,
+.form-group select {
+  border-radius: 20px;
+  background-color: transparent;
+  color: #dddddd;
+}
+
+.form-group input:focus {
+  background-color: #383737;
+  color: #dddddd;
+}
+
+select:required:invalid {
+  border-color: #dddddd;
+  color: grey;
+}
+
+.custom-select {
+  border-color: #dddddd;
+}
+
+/* option[value=""][disabled] {
+  display: none;
+} */
+
+option {
+  color: black;
+}
+
+
+#pass-message,
+#confirmPass-message,
+#email-message,
+#NIM-message,
+#phone-message {
+  color: red;
+  font-size: 0.7rem;
+}
+
+#NIM::-webkit-outer-spin-button,
+#NIM::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#NIM[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat-SemiBold";
+  background-color: #0f80ff;
+  color: #dddddd;
+  padding: .5rem 25%;
+  border-radius: 33px;
+}
+
+
+.ring1 {
+  position: absolute;
+  max-width: 50%;
+  top: -25%;
+  right: -15%;
+  z-index: 1;
+}
+
+.ring2 {
+  position: absolute;
+  max-width: 50%;
+  top: 60%;
+  left: -20%;
+  z-index: 1;
+}
+
+.have-account {
+  margin: 1rem auto 0 auto;
+  color: #dddddd;
+}
+
+@media (max-width: 1024px) {
+  .box {
+    width: 80%;
+  }
+
+  .box-content {
+    padding: 3rem;
+  }
+
+  .btn {
+    width: 50%;
+  }
+
+  .ring1,
+  .ring2 {
+    max-width: 50%;
+    position: fixed;
+  }
+
+  .ring1 {
+    top: -36%;
+    right: -18%;
+  }
+
+  .ring2 {
+    top: 50%;
+    left: -20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+
+  .box-content {
+    padding: 3rem;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .ring1,
+  .ring2 {
+    max-width: 50%;
+    position: fixed;
+  }
+
+  .ring1 {
+    top: 0%;
+    right: -20%;
+  }
+
+  .ring2 {
+    top: 80%;
+    left: -20%;
+  }
+}
